@@ -10,9 +10,6 @@ int main()
 {
 
 
-
-
-
 	CSocketProtocol sp;
 	setSP(&sp, socket_init, send_data, recv_data, socket_destory);
 	CEncDesProtocol ed;
