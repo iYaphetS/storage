@@ -43,7 +43,7 @@ $(demo_cgi):./test/demo_cgi.o
 $(savefile_2_redis):./test/savefile_2_redis.o redis_op.o make_log.o fdfs_api.o
 	$(CC) $^ -o $@ $(LIBS)
 
-#测试从redis数据库读数据操作
+#测试从redis数据库读取数据操作
 #$(select_files):./test/select_files.o redis_op.o make_log.o 
 #	$(CC) $^ -o $@ $(LIBS)
 
@@ -60,3 +60,6 @@ clean:
 distclean:
 	-rm -rf ./*.o $(target) ./test/*.o
 .PHONY: clean ALL distclean
+
+
+
