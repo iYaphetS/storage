@@ -23,7 +23,7 @@ int main()
 	int ret = framework(&sp, &ed, send_buf, send_len, recv_buf, &recv_len);
 	if (ret != 0)
 	{
-		printf("framework err:%d\n", ret);
+		printf("framework err=%d\n", ret);
 		return -1;
 	}
 
