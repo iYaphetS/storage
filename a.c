@@ -26,7 +26,7 @@ int main()
 		return -1;
 	}
 
-	printf("接受到的报文信息=%s, ======================长度=%d\n", recv_buf, recv_len);
+	printf("接受到的报文信息=%s, 长度=%d\n", recv_buf, recv_len);
 
 	return 0;
 	
