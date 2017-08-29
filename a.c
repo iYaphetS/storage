@@ -1,18 +1,12 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 
 #include "framework.h"//包含CSocketProtocol  CEncDesProtocol
 #include "CSckImp1.h"//包含socket_init, send_data, recv_data, socket_destory声明
 #include "CHwImp.h"//包含enc_file, des_file声明
 
-
-
-
-
 int main()
 {
-
-
 	CSocketProtocol sp;
 	setSP(&sp, socket_init, send_data, recv_data, socket_destory);
 	CEncDesProtocol ed;
@@ -32,7 +26,10 @@ int main()
 		return -1;
 	}
 
-	printf("接受到的报文信息=%s, 长度=%d\n", recv_buf, recv_len);
+	printf("接受到的报文信息=%s, ======================长度=%d\n", recv_buf, recv_len);
 
 	return 0;
+	
+	
+	
 }
