@@ -6,6 +6,9 @@
 #include "CHwImp.h"//包含enc_file, des_file声明
 
 
+
+
+
 int main()
 {
 
